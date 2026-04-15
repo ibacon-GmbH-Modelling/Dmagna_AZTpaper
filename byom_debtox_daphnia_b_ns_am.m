@@ -86,7 +86,7 @@ opt  = 1; % select an option (opt=1 is recommended for Daphnia)
 % scenario identifiers of the next one will have 100 added, the next one
 % 200 added, etc.).
 
-[data1,w1,LabelTable1] = data_AZT_Dmagna_calibration(TR,opt,1);
+[data1,w1,LabelTable1] = data_AZT_Dmagna_calibrationIBA(TR,opt,1);
 [data2,w2,LabelTable2] = data_AZT_Dmagna_calibration_ECT(TR,opt,2);
 % % Note: optionally, add some info to the MAT filename. The MAT filename
 % % will already include MoA and feedbacks, but if you want to try other

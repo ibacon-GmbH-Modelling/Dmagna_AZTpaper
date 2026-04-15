@@ -39,13 +39,13 @@ global glo
 %S(1,1) = -1; % make sure to use multinomial likelihood for survival
 
 % body length (mm) on each observation time (d)
-L = load(fullfile('data_AZT','Data_length_Dmagna_AZT_validation.txt'));
+L = load(fullfile('data_AZT','Data_length_Dmagna_AZT_validationECT.txt'));
 L(1,1) = TR; % make sure to use transformation as specified by input
 LW = ones(size(L)-1); % these are individual replicates, so weights are ones
 % NOTE: the initial lengths are the same 10 numbers for each treatment.
 
 % Reproduction, as neonates released, as observed on each observation time (d)
-R = load(fullfile('data_AZT','Data_repro_Dmagna_AZT_validation.txt'));
+R = load(fullfile('data_AZT','Data_repro_Dmagna_AZT_validationECT.txt'));
 R(1,1) = TR; % make sure to use transformation as specified by input
 
 % Create the data set with cumulatives and weights matrix from R
@@ -59,7 +59,7 @@ if opt == 0 % if we only want to check the repro data, we can stop here
 end
 
 % and define a scenario for the exposure treatments (ug/L??)
-Cw = load(fullfile('data_AZT','Data_exposure_Dmagna_AZT_validation.txt'));
+Cw = load(fullfile('data_AZT','Data_exposure_Dmagna_AZT_validationECT.txt'));
 Cw_type = 4; % Linear interpolation  
 
 % next, remove the controls from Cw; it is probably faster to define them
