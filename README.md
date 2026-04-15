@@ -8,5 +8,7 @@ https://www.debtox.info/byom.html
 
 The analysis was performed with BYOM version 6.5
 
-The datafiles to use thesee scripts can be made available upon
-request to the authors.
+The datasets for measured organism responses are available to qualified 
+researchers at academic or non-profit institutions for non-commercial 
+use upon reasonable request. Inquiries regarding data access should be 
+directed to Neil Sherborne (neil.sherborne@syngenta.com).
